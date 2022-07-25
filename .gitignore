@@ -37,3 +37,6 @@ Thumbs.db
 
 # Ignore built ts files
 dist/**/*
+
+# Don't save wallet files in the repo
+./wallets/*.wallet
