@@ -39,4 +39,4 @@ Thumbs.db
 dist/**/*
 
 # Don't save wallet files in the repo
-./wallets/*.wallet
+wallets/*.wallet
