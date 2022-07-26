@@ -3,6 +3,7 @@ import { GenerateNewWallet, CountWallets, Wallet, GetWallets } from '@/utils/wal
 import Sleep from '@/utils/sleep';
 import Config from '@/config';
 import inquirer from 'inquirer';
+import printSeparator from '@/utils/separator';
 
 async function viewWallets(): Promise<void> {
   const readWallets = await GetWallets();
@@ -76,11 +77,12 @@ async function main() {
     await generateWallets(walletsCount);
   }
 
-  console.log(chalk.green('----------------------------------------------------'));
+  printSeparator();
 
   // View Wallets
   await viewWallets();
 
+  printSeparator();
   // Run the main program
   await run();
 }
