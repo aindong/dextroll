@@ -52,13 +52,20 @@ async function main() {
       }
     ]);
 
-    console.log(inquire);
     if (inquire.mainMenu === 'Exit') {
       exitProcess = true;
     }
 
     if (inquire.mainMenu === 'View Wallets') {
       await viewWallets();
+    }
+
+    if (inquire.mainMenu === 'View a Wallet Token Balance') {
+      // View Token Balance of a Wallet
+    }
+
+    if (inquire.mainMenu === 'Regenerate Wallets') {
+      // Regenerate Wallets
     }
   }
 }
